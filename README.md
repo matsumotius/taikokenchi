@@ -5,19 +5,19 @@
 
 download & include this repository.
 
-## Run Test
+## Run test
 
 run test:
-    var tests = {
-       '人間はキーボードではない' : function(test) {
-           test.notEqual('human', 'keyboard');
-           test.finish();
-       },
-       'tearDown' : function(test){
-           console.log('init db');
-           test.finish();
-       }
-    };
+	var tests = {
+	    '人間はキーボードではない' : function(test) {
+                test.notEqual('human', 'keyboard');
+                test.finish();
+            },
+            'tearDown' : function(test){
+               console.log('init db');
+            test.finish();
+            }
+        };
 
 ## License 
 
