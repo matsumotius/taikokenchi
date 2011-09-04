@@ -36,7 +36,7 @@ TaikoKenchi.prototype.setUp = function() {
     ('setUp' in this.tests)? this.tests.setUp(new Kenchi(this, 'setUp')) : this.next();
 };
 TaikoKenchi.prototype.tearDown = function() {
-    ('tearDown' in this.tests)? this.tests.setUp(new Kenchi(this, 'tearDown')) : this.next();
+    ('tearDown' in this.tests)? this.tests.tearDown(new Kenchi(this, 'tearDown')) : this.next();
 };
 TaikoKenchi.prototype.finish = function() {
     this.flow = 0;
