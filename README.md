@@ -9,6 +9,7 @@ download & include this repository.
 
 run test:
 
+    var TaikoKenchi = require('./taikokenchi');
     var tests = {
         '人間はキーボードではない' : function(test) {
             test.notEqual('human', 'keyboard');
@@ -19,6 +20,8 @@ run test:
             test.finish();
         }
     };
+    vat taikokenchi = new TaikoKenchi(tests);
+    taikokenchi.run();
 
 ## License 
 
