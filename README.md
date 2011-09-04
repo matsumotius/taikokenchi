@@ -8,6 +8,7 @@ download & include this repository.
 ## Run test
 
 run test:
+
 	var tests = {
 	    '人間はキーボードではない' : function(test) {
                 test.notEqual('human', 'keyboard');
