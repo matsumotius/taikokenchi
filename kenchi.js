@@ -1,10 +1,11 @@
+var generate_message = function(){};
 var Kenchi = module.exports = function(_tk, _test) {
     this.tk = _tk;
     this.test = _test;
 };
 Kenchi.prototype.finish = function() {
-    console.log('SUCCESS:', this.test); 
-    this.tk.finish();
+    if(this.tk.is_test(this.test)) console.log('SUCCESS:', this.test); 
+    this.tk.next();
 };
 Kenchi.prototype.equal = function(expected, actual) {
     if(expected !== actual) this.error();
