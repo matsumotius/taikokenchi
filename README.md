@@ -9,19 +9,23 @@ download & include this repository.
 
 run test:
 
-    var TaikoKenchi = require('./taikokenchi');
-    var tests = {
-        '人間はキーボードではない' : function(test) {
-            test.notEqual('human', 'keyboard');
-            test.finish();
-        },
-        'tearDown' : function(test){
-            console.log('init db');
-            test.finish();
-        }
-    };
-    vat taikokenchi = new TaikoKenchi(tests);
-    taikokenchi.run();
+```javascript
+var TaikoKenchi = require('./taikokenchi');
+
+var tests = {
+    '人間はキーボードではない' : function(test) {
+        test.notEqual('human', 'keyboard');
+        test.finish();
+    },
+    'tearDown' : function(test){
+        console.log('init db');
+        test.finish();
+    }
+};
+
+vat taikokenchi = new TaikoKenchi(tests);
+taikokenchi.run();
+```
 
 ## License 
 
